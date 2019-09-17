@@ -1,0 +1,83 @@
+<div class="col-md-12 row">
+    <div class="col-md-4 align-center">
+        <h2 class="header text-center">{{libro1}}</h2>
+        <div class="card horizontal center">
+            <div class="card-image container">
+                <img src="./assets/uno.jpg">
+            </div>
+            <div class="card-stacked">
+                <div *ngIf="estadoCon1" class="card-content ">
+                    <p *ngIf="estado1"> En Crónica de una muerte anunciada nos cuenta, con un peculiar estilo cercano y
+                        fascinante, los hechos que llevaron a Santiago Nasar a la tumba después de una noche de
+                        celebración absoluta en
+                        el pueblo debido a la boda entre Bayardo San Román y Ángela Vicario.</p>
+                    <a (click)="estado1 = !estado1;" class="btn btn-secondary" role="button">SINOPSIS</a>
+                </div>
+                <div *ngIf="estadoAlquiler1" class="card-content">
+                    <h3>Alquilado con exito!</h3>
+                </div>
+                <div *ngIf="estadoBoton1" class="card-action">
+                    <button (click)="estadoAlquiler1 = true;" (click)="estadoCon1 = false || estadoBoton1 = false;"
+                        type="button" class="btn btn-outline-dark">Alquilar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <h2 class="header text-center">{{libro2}}</h2><br>
+        <div class="card horizontal center">
+            <div class="card-image container">
+                <img src="./assets/dos.png">
+            </div>
+            <div class="card-stacked">
+                <div *ngIf="estadoCon2" class="card-content">
+                    <p *ngIf="estado2">A Hazel le gusta leer libros pretenciosos y ver telebasura, leer poesía y dormir
+                        (además tiene la
+                        excusa de que es bueno para el cáncer) y le gustaría que sus pulmones funcionasen como unos
+                        pulmones
+                        normales. Su madre cree que está deprimida, así que empieza a ir a un grupo de apoyo todos los
+                        miércoles. Aunque, en realidad, no hay nada más deprimente que un grupo en el que cada día la
+                        lista
+                        de compañeros por los que rezar es más larga. Precisamente el día en el que conoció a Augustus
+                        Waters, fue el día en el que casi consiguió escaquearse para quedarse viendo un maratón de
+                        America’s
+                        Next Top Model.</p>
+                    <a (click)="estado2 = !estado2;" class="btn btn-secondary" role="button">SINOPSIS</a>
+                </div>
+                <div *ngIf="estadoAlquiler2" class="card-content">
+                    <h3>Alquilado con exito!</h3>
+                </div>
+                <div *ngIf="estadoBoton2" class="card-action">
+                    <button (click)="estadoAlquiler2 = true;" (click)="estadoCon2 = false || estadoBoton2 = false;"
+                        type="button" class="btn btn-outline-dark">Alquilar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <h2 class="header text-center">{{libro3}}</h2><br>
+        <div class="card horizontal center">
+            <div class="card-image container">
+                <img src="./assets/tres.jpg">
+            </div>
+            <div class="card-stacked">
+                <div *ngIf="estadoCon3" class="card-content ">
+                    <p *ngIf="estado3">Al día siguiente de mudarse de casa, Coraline explora las catorce puertas de su
+                        nuevo hogar. Trece se pueden abrir con normalidad, pero la decimocuarta está cerrada y tapiada.
+                        Cuando por fin consigue abrirla, Coraline se encuentra con un pasadizo secreto que la conduce a
+                        otra casa tan parecida a la suya que resulta escalofriante. </p>
+                    <a (click)="estado3 = !estado3;" class="btn btn-secondary" role="button">SINOPSIS</a>
+                </div>
+                <div *ngIf="estadoAlquiler3" class="card-content">
+                    <h3>Alquilado con exito!</h3>
+                </div>
+                <div *ngIf="estadoBoton3" class="card-action">
+                    <button (click)="estadoAlquiler3 = true;" (click)="estadoCon3 = false || estadoBoton3 = false;"
+                        type="button" class="btn btn-outline-dark">Alquilar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
